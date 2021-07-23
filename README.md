@@ -24,7 +24,7 @@ The project contains different nodes which are basically the packages. Each node
 2. launch folder: this folder contains the launch files, which launches the node and completes relevant operation.
 3. srv folder: this folder usually contains the relevant type of service which is required for the corresponding nodes operations.
 
-For more details about the folder structures of ROS please refer to this [link]:(http://wiki.ros.org/Packages)
+For more details about the folder structures of ROS please refer to this [link](http://wiki.ros.org/Packages)
 
 Kinematics:
 	The packages related to kinematics can be found at "/catkin_ws/src/franka_ros-simulation/" folder with suffix "z_" i.e., 
@@ -39,4 +39,35 @@ vision:
 	1. camera_calib
 	2. hand_eye
 	3. model_registration
+
+## Specific instructions to launch files:
+	
+1. Camera calibration node:
+	launch "trajectory_camera_calibration.launch" or "trajectory_camera_calibration_sim.launch" file before launching camera_calib.launch
+2. Hand eye calibration:
+	launch "trajectory_hand_eye_calibration.launch" "trajectory_hand_eye_calibration_sim.launch" file before launching hand_eye.launch
+
+Since the master computer did not have compatibility with point cloud libraries, the launch of point cloud and "trajectory_target_execution.launch" or "trajectory_target_execution_sim.launch" is 
+not automated.
+
+##Some useful terminal commands:
+	
+* while testing on real robot:
+	$ roslaunch z_forward_kinematics forward_kinematics_test.launch
+	$ roslaunch z_inverse_kinematics inverse_kinematics.launch
+	$ roslaunch z_trajectory_planning trajectory_camera_calibration.launch
+	$ roslaunch z_trajectory_planning trajectory_hand_eye_calibration.launch
+	$ roslaunch z_trajectory_planning trajectory_planning_test.launch
+	$ roslaunch z_trajectory_planning trajectory_pointcloud_registration.launch
+	$ roslaunch z_trajectory_planning trajectory_target_execution.launch
+
+
+* While testing on simulator:
+	$ roslaunch z_forward_kinematics forward_kinematics_test.launch
+	$ roslaunch z_inverse_kinematics inverse_kinematics.launch
+	$ roslaunch z_trajectory_planning trajectory_camera_calibration_sim.launch
+	$ roslaunch z_trajectory_planning trajectory_hand_eye_calibration_sim.launch
+	$ roslaunch z_trajectory_planning trajectory_planning_test_sim.launch
+	$ roslaunch z_trajectory_planning trajectory_pointcloud_registration_sim.launch
+	$ roslaunch z_trajectory_planning trajectory_target_execution_sim.launch
 
