@@ -50,7 +50,7 @@ vision:
 Since the master computer did not have compatibility with point cloud libraries, the launch of point cloud and "trajectory_target_execution.launch" or "trajectory_target_execution_sim.launch" is 
 not automated.
 
-## Some useful terminal commands:
+### Some useful terminal commands that can be used to launch nodes if this project has been integrated into a ROS environment:
 	
 	* while testing on real robot:
 		$ roslaunch z_forward_kinematics forward_kinematics_test.launch
