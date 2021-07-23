@@ -1,0 +1,5 @@
+bool execution_success
+int32 n_pose
+---
+float64[] next_pose
+

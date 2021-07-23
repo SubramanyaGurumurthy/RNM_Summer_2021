@@ -1,0 +1,9 @@
+<launch>
+
+    <node name="inverse_kinematics_node" pkg="z_inverse_kinematics" type="inverse_kinematics_node.py">
+        <!--<param name="joint_move_dist" value="30" />-->
+        <!-- <param name="command_topic" value="/joint_position_example_controller_sim/joint_command" /> -->
+        <param name="command_topic" value="/joint_position_example_controller_sim/joint_command" />
+    </node>
+
+</launch>

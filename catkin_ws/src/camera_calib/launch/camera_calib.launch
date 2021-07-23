@@ -1,0 +1,5 @@
+<launch>
+    <node name = "camera_calib_node" pkg = "camera_calib" type ="camera_calib_node.py" output="screen">
+        <param name = "image" value ="20"/>
+    </node>
+</launch>

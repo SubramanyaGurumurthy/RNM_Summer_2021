@@ -1,0 +1,5 @@
+<launch>
+    <node name = "m <param name = "image" value ="20"/>odel_registration" pkg = "model_registration" type ="model_registration.py" output="screen">
+	 <param name = "image" value ="20"/>
+    </node>
+</launch>

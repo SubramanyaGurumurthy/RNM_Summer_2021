@@ -1,0 +1,9 @@
+<launch>
+  <!-- Adding joint states publisher GUI to rviz -->
+  <node name="joint_state_publisher_gui" pkg="joint_state_publisher_gui" type="joint_state_publisher_gui">
+	<param name="use_gui" value="True"/>
+  </node>
+    <node name = "test_move_node" pkg = "franka_example_controllers" type ="test_move_node">
+        <param name = "joint_dist_value" value ="20"/>
+    </node>
+</launch>

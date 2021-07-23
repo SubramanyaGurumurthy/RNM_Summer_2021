@@ -1,0 +1,24 @@
+<launch>
+    <node name="message_poses_server" pkg="z_trajectory_planning" type="message_poses_server.py">
+
+        <param name="project_step" value="TargetExecution" />
+
+    </node>
+
+
+    <node name="trajectory_planning_client" pkg="z_trajectory_planning" type="trajectory_planning_client.py">
+
+        <param name="project_step" value="TargetExecution" />
+        <param name="path_type" value="quintic" />  <!--  value="straight"  -->
+        <param name="command_topic" value="/joint_position_example_controller_sim/joint_command" />
+
+    </node>
+
+
+    <node name="trajectory_execution_server" pkg="z_trajectory_execution" type="trajectory_execution_server.py">
+
+        <param name="command_topic" value="/joint_position_example_controller_sim/joint_command" />
+
+    </node>
+
+</launch>

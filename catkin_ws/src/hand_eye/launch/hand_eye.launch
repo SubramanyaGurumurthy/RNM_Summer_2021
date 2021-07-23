@@ -1,0 +1,5 @@
+<launch>
+    <node name = "hand_eye_node" pkg = "hand_eye" type ="hand_eye_node.py" output="screen">
+        <param name = "images" value ="20"/>
+    </node>
+</launch>
