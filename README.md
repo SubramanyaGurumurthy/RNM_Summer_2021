@@ -71,3 +71,5 @@ not automated.
 		$ roslaunch z_trajectory_planning trajectory_pointcloud_registration_sim.launch
 		$ roslaunch z_trajectory_planning trajectory_target_execution_sim.launch
 
+### Link to the working video can be found at:
+	Link: https://cloud.tuhh.de/index.php/s/CrF3tJNKX4QNimt
