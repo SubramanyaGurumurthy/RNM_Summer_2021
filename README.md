@@ -72,4 +72,4 @@ not automated.
 		$ roslaunch z_trajectory_planning trajectory_target_execution_sim.launch
 
 ### Link to the working video can be found at:
-	Link: https://cloud.tuhh.de/index.php/s/CrF3tJNKX4QNimt
+Link: https://cloud.tuhh.de/index.php/s/CrF3tJNKX4QNimt
