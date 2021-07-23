@@ -24,10 +24,10 @@ The project contains different nodes which are basically the packages. Each node
 	2. launch folder: this folder contains the launch files, which launches the node and completes relevant operation.
 	3. srv folder: this folder usually contains the relevant type of service which is required for the corresponding nodes operations.
 
-	For more details about the folder structures of ROS please refer to this [link](http://wiki.ros.org/Packages)
+	For more details about the folder structures of ROS please refer to this [link]:(http://wiki.ros.org/Packages)
 
 	Kinematics:
-		The packages related to kinematics can be found at "/Submission/catkin_ws/src/franka_ros-simulation/" folder with suffix "z_" i.e., 
+		The packages related to kinematics can be found at "/catkin_ws/src/franka_ros-simulation/" folder with suffix "z_" i.e., 
 		1. z_forward_kinematics
 		2. z_inverse_kinematics
 		3. z_trajectory_execution
@@ -35,7 +35,7 @@ The project contains different nodes which are basically the packages. Each node
 		
 	
 	vision: 
-		The packages related to vision can be found at "/Submission/catkin_ws/src/" which are:
+		The packages related to vision can be found at "/catkin_ws/src/" which are:
 		1. camera_calib
 		2. hand_eye
 		3. model_registration
