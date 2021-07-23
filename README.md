@@ -4,18 +4,18 @@ In this project, we developed an image guided robotic needle placement system us
 
 ## Dependencies:
 
-   * Ros - Melodic
-   * python version - 2.7
+* Ros - Melodic
+* python version - 2.7
 
 
-	1.Python Libraries used:
-		numpy - version: 1.16.6
-		opencv - version: 3.2.0
-		scipy - version: 1.2.3
-		open3d - version: 0.9.0.0
+1.Python Libraries used:
+	numpy - version: 1.16.6
+	opencv - version: 3.2.0
+	scipy - version: 1.2.3
+	open3d - version: 0.9.0.0
 
-	2.Ros library:
-		cv_bridge
+2.Ros library:
+	cv_bridge
 
 ## Folder structure:
 The project contains different nodes which are basically the packages. Each node/package contains src/scripts folder, launch folder, srv folder.
@@ -50,7 +50,7 @@ vision:
 Since the master computer did not have compatibility with point cloud libraries, the launch of point cloud and "trajectory_target_execution.launch" or "trajectory_target_execution_sim.launch" is 
 not automated.
 
-##Some useful terminal commands:
+## Some useful terminal commands:
 	
 * while testing on real robot:
 	$ roslaunch z_forward_kinematics forward_kinematics_test.launch
