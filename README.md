@@ -8,13 +8,13 @@ In this project, we developed an image guided robotic needle placement system us
 * python version - 2.7
 
 
-1.Python Libraries used:
+1. Python Libraries used:
 * numpy - version: 1.16.6
 * opencv - version: 3.2.0
 * scipy - version: 1.2.3
 * open3d - version: 0.9.0.0
 
-2.Ros library:
+2. Ros library:
 * cv_bridge
 
 ## Folder structure:
